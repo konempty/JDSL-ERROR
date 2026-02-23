@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: JDSL_ERROR
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:jdsl_demo}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${MYSQL_USER:app}
+    password: ${MYSQL_PASSWORD:app}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
